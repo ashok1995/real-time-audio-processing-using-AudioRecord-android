@@ -162,8 +162,8 @@ public class MainActivity extends AppCompatActivity {
 
             try {
 
-                //URL url = new URL("http://192.169.30.125:5000");
-                URL url = new URL("http://192.169.33.167:8080/identify_debug");
+               URL url = new URL("http://0.0.0.0:5000");
+               
 
                 String ofSong = retVal;
                 //String ofSong = getEncodedFile(AudioSavePathInDevice);
@@ -219,8 +219,6 @@ public class MainActivity extends AppCompatActivity {
 
                     JSONObject responseObject = new JSONObject(sb.toString());
                     songName = responseObject.getString("response");
-                    code = Integer.parseInt(responseObject.getString("identified"));
-
                     return sb.toString();
 
                 }
