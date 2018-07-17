@@ -1,4 +1,4 @@
-package com.gaana.mis;
+package com.android.realTimeAudioProcessing;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
